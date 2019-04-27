@@ -6,7 +6,7 @@
   },
   "globals": {
      "module": false
-  }
+  },
   "parserOptions": {
     "ecmaVersion": 6
   },
