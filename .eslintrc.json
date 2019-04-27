@@ -4,6 +4,9 @@
     "amd": true,
     "node": true
   },
+  "globals": {
+     "module": false
+  }
   "parserOptions": {
     "ecmaVersion": 6
   },
