@@ -134,13 +134,6 @@
             "tsConfig": ["libs/angular/ng-sentry/tsconfig.lib.json", "libs/angular/ng-sentry/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**"]
           }
-        },
-        "test": {
-          "builder": "@nrwl/builders:jest",
-          "options": {
-            "jestConfig": "libs/angular/ng-sentry/jest.config.js",
-            "tsConfig": "libs/angular/ng-sentry/tsconfig.spec.json"
-          }
         }
       },
       "schematics": {
