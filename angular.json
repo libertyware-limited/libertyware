@@ -22,8 +22,16 @@
             "main": "apps/youth-defunder/src/main.ts",
             "polyfills": "apps/youth-defunder/src/polyfills.ts",
             "tsConfig": "apps/youth-defunder/tsconfig.app.json",
-            "assets": ["apps/youth-defunder/src/favicon.ico", "apps/youth-defunder/src/assets"],
-            "styles": ["apps/youth-defunder/src/styles.scss"],
+            "assets": [
+              "apps/youth-defunder/src/favicon.ico",
+              "apps/youth-defunder/src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
+            ],
+            "styles": ["apps/youth-defunder/src/theme.less", "apps/youth-defunder/src/styles.scss"],
             "scripts": [],
             "es5BrowserSupport": true
           },
