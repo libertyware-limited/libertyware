@@ -114,6 +114,40 @@
           }
         }
       }
+    },
+    "angular-ng-sentry": {
+      "root": "libs/angular/ng-sentry",
+      "sourceRoot": "libs/angular/ng-sentry/src",
+      "projectType": "library",
+      "prefix": "libertyware",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/angular/ng-sentry/tsconfig.lib.json",
+            "project": "libs/angular/ng-sentry/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/angular/ng-sentry/tsconfig.lib.json", "libs/angular/ng-sentry/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/angular/ng-sentry/jest.config.js",
+            "tsConfig": "libs/angular/ng-sentry/tsconfig.spec.json"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
