@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'youth-defunder';
+  isCollapsed = false;
+  isReverseArrow = false;
+  width = 200;
+  title = 'UK Register Exposed';
 }
